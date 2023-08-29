@@ -1,0 +1,49 @@
+package day2;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import org.testng.annotations.Test;
+
+
+public class WayToPostData 
+{
+	
+	@Test(priority=1)
+	public void createStudent()
+	{
+		
+	}
+	
+	
+	
+	@Test(priority=1,dependsOnMethods = {})
+	public void listAllStudent()
+	{
+		
+	}
+	
+	
+	
+	@Test(priority=1,dependsOnMethods = {})
+	public void listSingleStudent()
+	{
+		
+	}
+	
+	
+	
+	@Test(priority=1,dependsOnMethods = {})
+	public void updateStudent()
+	{
+		
+	}
+	
+	
+	@Test(priority=1,dependsOnMethods = {})
+	public void deleteStudent()
+	{
+		
+	}
+	
+}

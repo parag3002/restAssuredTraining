@@ -1,0 +1,85 @@
+package day2;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import java.util.HashMap;
+
+import org.testng.annotations.Test;
+
+import jdk.internal.net.http.common.Log;
+
+
+public class WayToPostData 
+{
+	
+	@Test(priority=1)
+	public void createStudent()
+	{
+		
+		HashMap data = new HashMap();
+		data.put("name", "Dimitro Kovienko");
+		data.put("location", "Rusia");
+		data.put("phone", "9832421037");
+		String courseArr[] = {"JAVA","VC++"};
+		data.put("courses", courseArr);
+		
+//		{
+//	        "id": 4,
+//	        "name": "Dimitro",
+//	        "location": "Rusia",
+//	        "phone": "3234567832",
+//	        "courses": [
+//	            "C++",
+//	            "C"
+//	        ]
+//	    }
+		
+		given()
+		
+		.when()()
+		
+		
+		.then()
+			.log.all();
+	}
+	
+	
+	
+	@Test(priority=1)
+	public void listAllStudent()
+	{
+		given()
+		
+		.when()
+			.get("http://localhost:3000/student_record")
+		
+		.then()
+			.statusCode(200)
+			.log().all();
+	}
+	
+	
+	
+	@Test(priority=1,dependsOnMethods = {"listAllStudent"})
+	public void listSingleStudent()
+	{
+		
+	}
+	
+	
+	
+	@Test(priority=1,dependsOnMethods = {"listSingleStudent"})
+	public void updateStudent()
+	{
+		
+	}
+	
+	
+	@Test(priority=1,dependsOnMethods = {"updateStudent"})
+	public void deleteStudent()
+	{
+		
+	}
+	
+}

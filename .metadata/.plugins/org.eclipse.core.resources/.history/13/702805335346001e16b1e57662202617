@@ -1,0 +1,61 @@
+package day2;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import org.testng.annotations.Test;
+
+import jdk.internal.net.http.common.Log;
+
+
+public class WayToPostData 
+{
+	
+	@Test(priority=1)
+	public void createStudent()
+	{
+		
+		HashMap data = new HashMap();
+		
+		
+	}
+	
+	
+	
+	@Test(priority=1)
+	public void listAllStudent()
+	{
+		given()
+		
+		.when()
+			.get("http://localhost:3000/student_record")
+		
+		.then()
+			.statusCode(200)
+			.log().all();
+	}
+	
+	
+	
+	@Test(priority=1,dependsOnMethods = {"listAllStudent"})
+	public void listSingleStudent()
+	{
+		
+	}
+	
+	
+	
+	@Test(priority=1,dependsOnMethods = {"listSingleStudent"})
+	public void updateStudent()
+	{
+		
+	}
+	
+	
+	@Test(priority=1,dependsOnMethods = {"updateStudent"})
+	public void deleteStudent()
+	{
+		
+	}
+	
+}

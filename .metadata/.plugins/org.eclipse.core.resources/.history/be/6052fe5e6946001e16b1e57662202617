@@ -1,0 +1,56 @@
+package day2;
+
+public class Pojo_PostRequest 
+{
+
+	private String location;
+	private String name;
+	private String phone;
+	private String courcesPost[];
+	int u;
+	int j;
+	
+	
+	
+	public String getName() 
+	{
+		return name;
+	}
+	public void setName(String name) 
+	{
+		this.name = name;
+	}
+	
+	
+	public String getLocation() 
+	{
+		return location;
+	}
+	public void setLocation(String location) 
+	{
+		this.location = location;
+	}
+	
+	
+	public String getPhone() 
+	{
+		return phone;
+	}
+	public void setPhone(String phone) 
+	{
+		this.phone = phone;
+	}
+	
+	
+	public String[] getCourcesPost() 
+	{
+		return courcesPost;
+	}
+	public void setCourcesPost(String[] courcesPost) 
+	{
+		this.courcesPost = courcesPost;
+	}
+	
+	
+	
+}

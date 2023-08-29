@@ -1,0 +1,12 @@
+package day2;
+
+public class A 
+{
+
+	public String name;
+	public String location;
+	public String phone;
+	public String courcesPost[];
+	
+
+}

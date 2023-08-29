@@ -1,0 +1,36 @@
+package day3;
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.HashMap;
+
+import org.json.JSONObject;
+import org.json.JSONTokener;
+import org.testng.annotations.Test;
+
+import java.io.FileReader;
+import jdk.internal.net.http.common.Log;
+
+
+public class CookieTest 
+{
+	@Test
+	public void testCookie()
+	{
+		given()
+		
+		.when()
+			.get("https://www.google.com")
+		.then()
+			.statusCode(200)
+			//.cookie("AEC","Ad49MVGyJjlz1mKlK7Z8GLLjhEqv-9V-D1YwD0dCsrnLoaHvWMAuNlrKiA; expires=Sun, 25-Feb-2024 16:08:24 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax")
+			.cookie("1P_JAR","2023-08-29-16")
+			.log().all();
+		
+	}
+	
+}
