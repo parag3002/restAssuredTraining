@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day3.CookieTest">
+      <class name="day4.ResponseBodyTest">
         <methods>
-          <include name="testCookie"/>
+          <include name="responseTestTestNgAssertion"/>
+          <include name="responseTestiNthen"/>
         </methods>
-      </class> <!-- day3.CookieTest -->
+      </class> <!-- day4.ResponseBodyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

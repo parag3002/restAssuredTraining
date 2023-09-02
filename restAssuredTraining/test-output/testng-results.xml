@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-29T23:46:43 IST" name="Default suite" finished-at="2023-08-29T23:46:45 IST" duration-ms="1295">
+  <suite started-at="2023-09-02T18:23:44 IST" name="APISuit" finished-at="2023-09-02T18:23:49 IST" duration-ms="4274">
     <groups>
     </groups>
-    <test started-at="2023-08-29T23:46:43 IST" name="Default test" finished-at="2023-08-29T23:46:45 IST" duration-ms="1295">
-      <class name="day3.LogginAPI">
-        <test-method signature="testLog()[pri:0, instance:day3.LogginAPI@4d1c00d0]" started-at="2023-08-29T23:46:43 IST" name="testLog" finished-at="2023-08-29T23:46:45 IST" duration-ms="1267" status="PASS">
+    <test started-at="2023-09-02T18:23:44 IST" name="API_Test" finished-at="2023-09-02T18:23:49 IST" duration-ms="4274">
+      <class name="day1.HTTPRequests">
+        <test-method signature="listSingleUser()[pri:1, instance:day1.HTTPRequests@302552ec]" started-at="2023-09-02T18:23:44 IST" name="listSingleUser" finished-at="2023-09-02T18:23:46 IST" duration-ms="2130" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLog -->
-      </class> <!-- day3.LogginAPI -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- listSingleUser -->
+        <test-method signature="createUser()[pri:2, instance:day1.HTTPRequests@302552ec]" started-at="2023-09-02T18:23:46 IST" name="createUser" finished-at="2023-09-02T18:23:47 IST" depends-on-methods="day1.HTTPRequests.listSingleUser" duration-ms="966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="updateUser()[pri:3, instance:day1.HTTPRequests@302552ec]" started-at="2023-09-02T18:23:47 IST" name="updateUser" finished-at="2023-09-02T18:23:48 IST" depends-on-methods="day1.HTTPRequests.createUser" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+        <test-method signature="deleteUser()[pri:3, instance:day1.HTTPRequests@302552ec]" started-at="2023-09-02T18:23:48 IST" name="deleteUser" finished-at="2023-09-02T18:23:49 IST" depends-on-methods="day1.HTTPRequests.updateUser" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- day1.HTTPRequests -->
+    </test> <!-- API_Test -->
+  </suite> <!-- APISuit -->
 </testng-results>

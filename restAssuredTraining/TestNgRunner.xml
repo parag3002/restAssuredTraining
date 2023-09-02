@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="APISuit">
+  <test thread-count="5" name="API_Test">
+    <classes>
+		<!--
+      <class name="day3.CookieTest"/>
+      <class name="day3.PathQueryParam"/>
+      <class name="day2.WayToPostData"/>
+      <class name="day3.HeaderTest"/>
+      <class name="day1.HTTPRequests"/>
+      <class name="day3.LogginAPI"/>
+      -->
+      
+      <class name="day1.HTTPRequests"/>
+      
+      
+    </classes>
+  </test> <!-- API_Test -->
+</suite> <!-- APISuit -->
