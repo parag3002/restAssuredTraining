@@ -19,7 +19,7 @@ public class WayToPostData
 {
 	
 	//@Test(priority=1)
-	public void createStudent()
+	public void createStudent() // post data using HashMap
 	{
 		
 		HashMap data = new HashMap();
@@ -51,7 +51,7 @@ public class WayToPostData
 	
 	
 	
-	//@Test(priority=1)
+	//@Test(priority=1) // post data using JSON Object
 	public void createStudentOrgJson()
 	{
 				
@@ -85,7 +85,7 @@ public class WayToPostData
 	
 	
 	
-	//@Test
+	//@Test // post data using Pojo class
 	public void createStudentPojoClass()
 	{
 		String courseArr[] = {"JAVA","Cobol"};

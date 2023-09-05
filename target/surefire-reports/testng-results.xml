@@ -1,35 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-05T13:30:54 IST" name="APISuit" finished-at="2023-09-05T13:31:01 IST" duration-ms="6994">
+  <suite started-at="2023-09-05T23:14:00 IST" name="APISuit" finished-at="2023-09-05T23:14:10 IST" duration-ms="10246">
     <groups>
     </groups>
-    <test started-at="2023-09-05T13:30:54 IST" name="API_Test" finished-at="2023-09-05T13:31:01 IST" duration-ms="6994">
-      <class name="day6.SchemaValidationClass">
-        <test-method signature="jsonSchema_Test()[pri:1, instance:day6.SchemaValidationClass@313ac989]" started-at="2023-09-05T13:30:59 IST" name="jsonSchema_Test" finished-at="2023-09-05T13:31:00 IST" duration-ms="1169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jsonSchema_Test -->
-        <test-method signature="xmlSchema_Test()[pri:2, instance:day6.SchemaValidationClass@313ac989]" started-at="2023-09-05T13:31:00 IST" name="xmlSchema_Test" finished-at="2023-09-05T13:31:01 IST" duration-ms="614" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- xmlSchema_Test -->
-      </class> <!-- day6.SchemaValidationClass -->
-      <class name="day1.HTTPRequests">
-        <test-method signature="listSingleUser()[pri:1, instance:day1.HTTPRequests@49e53c76]" started-at="2023-09-05T13:30:54 IST" name="listSingleUser" finished-at="2023-09-05T13:30:56 IST" duration-ms="2310" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- listSingleUser -->
-        <test-method signature="createUser()[pri:2, instance:day1.HTTPRequests@49e53c76]" started-at="2023-09-05T13:30:56 IST" name="createUser" finished-at="2023-09-05T13:30:58 IST" depends-on-methods="day1.HTTPRequests.listSingleUser" duration-ms="1728" status="PASS">
+    <test started-at="2023-09-05T23:14:00 IST" name="API_Test" finished-at="2023-09-05T23:14:10 IST" duration-ms="10246">
+      <class name="day8_api_Chaining.CreateUser">
+        <test-method signature="createUser()[pri:1, instance:day8_api_Chaining.CreateUser@1dac5ef]" started-at="2023-09-05T23:14:08 IST" name="createUser" finished-at="2023-09-05T23:14:10 IST" duration-ms="1906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
-        <test-method signature="updateUser()[pri:3, instance:day1.HTTPRequests@49e53c76]" started-at="2023-09-05T13:30:58 IST" name="updateUser" finished-at="2023-09-05T13:30:58 IST" depends-on-methods="day1.HTTPRequests.createUser" duration-ms="617" status="PASS">
+      </class> <!-- day8_api_Chaining.CreateUser -->
+      <class name="day6.SchemaValidationClass">
+        <test-method signature="jsonSchema_Test()[pri:1, instance:day6.SchemaValidationClass@692f203f]" started-at="2023-09-05T23:14:03 IST" name="jsonSchema_Test" finished-at="2023-09-05T23:14:03 IST" duration-ms="415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonSchema_Test -->
+        <test-method signature="xmlSchema_Test()[pri:2, instance:day6.SchemaValidationClass@692f203f]" started-at="2023-09-05T23:14:03 IST" name="xmlSchema_Test" finished-at="2023-09-05T23:14:03 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xmlSchema_Test -->
+        <test-method signature="jsonSchema_Test_ResponseVariable()[pri:3, instance:day6.SchemaValidationClass@692f203f]" started-at="2023-09-05T23:14:03 IST" name="jsonSchema_Test_ResponseVariable" finished-at="2023-09-05T23:14:04 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonSchema_Test_ResponseVariable -->
+      </class> <!-- day6.SchemaValidationClass -->
+      <class name="day7.AuthenticationAPI">
+        <test-method signature="basicAuthentication()[pri:1, instance:day7.AuthenticationAPI@48f2bd5b]" started-at="2023-09-05T23:14:04 IST" name="basicAuthentication" finished-at="2023-09-05T23:14:05 IST" duration-ms="1368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicAuthentication -->
+        <test-method signature="digestAuthentication()[pri:2, instance:day7.AuthenticationAPI@48f2bd5b]" started-at="2023-09-05T23:14:05 IST" name="digestAuthentication" finished-at="2023-09-05T23:14:06 IST" duration-ms="1386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- digestAuthentication -->
+        <test-method signature="preemptiveAuthentication()[pri:3, instance:day7.AuthenticationAPI@48f2bd5b]" started-at="2023-09-05T23:14:06 IST" name="preemptiveAuthentication" finished-at="2023-09-05T23:14:07 IST" duration-ms="1197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preemptiveAuthentication -->
+        <test-method signature="bearerTokenAuth()[pri:4, instance:day7.AuthenticationAPI@48f2bd5b]" started-at="2023-09-05T23:14:07 IST" name="bearerTokenAuth" finished-at="2023-09-05T23:14:08 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bearerTokenAuth -->
+        <test-method signature="oauth_02_Auth()[pri:5, instance:day7.AuthenticationAPI@48f2bd5b]" started-at="2023-09-05T23:14:08 IST" name="oauth_02_Auth" finished-at="2023-09-05T23:14:08 IST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oauth_02_Auth -->
+        <test-method signature="apiKeyAuth()[pri:6, instance:day7.AuthenticationAPI@48f2bd5b]" started-at="2023-09-05T23:14:08 IST" name="apiKeyAuth" finished-at="2023-09-05T23:14:08 IST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiKeyAuth -->
+      </class> <!-- day7.AuthenticationAPI -->
+      <class name="day1.HTTPRequests">
+        <test-method signature="listSingleUser()[pri:1, instance:day1.HTTPRequests@34a3d150]" started-at="2023-09-05T23:14:00 IST" name="listSingleUser" finished-at="2023-09-05T23:14:01 IST" duration-ms="1664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listSingleUser -->
+        <test-method signature="createUser()[pri:2, instance:day1.HTTPRequests@34a3d150]" started-at="2023-09-05T23:14:01 IST" name="createUser" finished-at="2023-09-05T23:14:02 IST" depends-on-methods="day1.HTTPRequests.listSingleUser" duration-ms="663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="updateUser()[pri:3, instance:day1.HTTPRequests@34a3d150]" started-at="2023-09-05T23:14:02 IST" name="updateUser" finished-at="2023-09-05T23:14:02 IST" depends-on-methods="day1.HTTPRequests.createUser" duration-ms="414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUser -->
-        <test-method signature="deleteUser()[pri:3, instance:day1.HTTPRequests@49e53c76]" started-at="2023-09-05T13:30:58 IST" name="deleteUser" finished-at="2023-09-05T13:30:59 IST" depends-on-methods="day1.HTTPRequests.updateUser" duration-ms="520" status="PASS">
+        <test-method signature="deleteUser()[pri:3, instance:day1.HTTPRequests@34a3d150]" started-at="2023-09-05T23:14:02 IST" name="deleteUser" finished-at="2023-09-05T23:14:03 IST" depends-on-methods="day1.HTTPRequests.updateUser" duration-ms="347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteUser -->

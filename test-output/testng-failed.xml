@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day6.SchemaValidationClass">
+      <class name="day7.AuthenticationAPI">
         <methods>
-          <include name="xmlSchema_Test"/>
+          <include name="basicAuthentication"/>
         </methods>
-      </class> <!-- day6.SchemaValidationClass -->
+      </class> <!-- day7.AuthenticationAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -20,6 +20,7 @@ import com.google.gson.JsonObject;
 import dev.failsafe.internal.util.Assert;
 import groovyjarjarpicocli.CommandLine.IExitCodeExceptionMapper;
 import io.restassured.http.ContentType;
+import io.restassured.internal.ResponseSpecificationImpl.HamcrestAssertionClosure;
 import io.restassured.matcher.RestAssuredMatchers;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.path.xml.XmlPath;
@@ -64,6 +65,24 @@ public class SchemaValidationClass
 			.statusCode(200)
 			.assertThat().body(RestAssuredMatchers.matchesXsdInClasspath("travelerSchema.xsd"))
 			.log().body();
+	}
+	
+	// incomplete --
+	@Test(priority=3)
+	public void jsonSchema_Test_ResponseVariable()
+	{
+		
+		Response responseJSON = given()
+		
+		.when()
+			.get("https://gorest.co.in/public/v2/users/");
+
+		String responseString = responseJSON.body().asString();
+		System.out.println(responseString);
+		
+		JsonSchemaValidator f= JsonSchemaValidator.matchesJsonSchemaInClasspath("storeJsonSchema.json");
+		
+		
 	}
 	
 }
