@@ -1,11 +1,12 @@
 day1\HTTPRequests.class
 day2\A.class
+day3\HeaderTest.class
+day3\CookieTest.class
+day6\SchemaValidationClass.class
 day4\ResponseBodyTest.class
 day5\XmlResponse.class
 day2\Pojo_PostRequest.class
-day3\HeaderTest.class
 day3\LogginAPI.class
-day3\CookieTest.class
 day2\WayToPostData.class
 day3\PathQueryParam.class
 day5\FileUpload.class

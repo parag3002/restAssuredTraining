@@ -13,6 +13,7 @@
       -->
       
       <class name="day1.HTTPRequests"/>
+      <class name="day6.SchemaValidationClass"/>
       
       
     </classes>
